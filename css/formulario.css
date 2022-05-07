@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #29DDFF;
+    display: grid;
+    grid-template-columns: 1fr 700px;
+    transition: width 1.5s;
+    transition: margin 1.5s;
+    margin: 0px;
+}
+
+#image {
+    height: 100%;
+    background-image: linear-gradient(rgba(81, 124, 150, 0.616),
+            rgba(81, 126, 150, 0.5)),
+        url("https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: opacity 1.5s;
+}
+
+#title {
+    text-align: center;
+}
+
+#description {
+    display: block;
+    margin: 0 80px 30px 80px;
+    text-align: center;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+#textarea,
+#submit {
+    width: 100%;
+}
+
+.entry {
+    display: inline;
+    position: center;
+    width: 100%;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+select,
+.group,
+textarea {
+    margin: 0px 0px 20px 0px;
+}
+
+.group {
+    font-weight: bold;
+}
+
+p {
+    margin: 0px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 7px 4px;
+}
+
+textarea {
+    height: 8rem;
+    padding: 5px;
+}
+
+#submit {
+    height: 3rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: white;
+}
+
+#submit:hover {
+    background-color: white;
+}
+
+.option-label {
+    font-weight: normal;
+}
+
+@media (max-width: 1000px) {
+    #image {
+        opacity: 0;
+    }
+
+    body {
+        width: 700px;
+        grid-template-columns: 0px 700px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 700px) {
+    body {
+        width: 100%;
+        grid-template-columns: 0px 1fr;
+    }
+}
