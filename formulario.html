@@ -2,76 +2,42 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TECNO-SERVICE</title>
-    <link rel="stylesheet" href="css/formulario.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>formulari</title>
+  <link rel="stylesheet" href="css/formulario.css">
+  <script src="js/formulario.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div id="image"></div>
-    <div id="content">
-        <h1 id="title">Formulario de Inscripción 2022</h1>
-        <p id="description">Completa todos los datos a continuación y haz click en Enviar. <br>¡Muchas gracias!</p>
 
-        <form id="survey-form">
-
-            <label for="name" id="name-label">Nombre</label><br>
-            <input type="text" placeholder="Ingresa tu nombre completo" id="name" class="entry" required><br>
-
-            <label for="email" id="email-label">Email</label><br>
-            <input type="email" placeholder="Ingresa tu correo electrónico" id="email" class="entry" required><br>
-
-            <label for="number" id="number-label">Edad (opcional)</label><br>
-            <input type="number" min="0" max="120" placeholder="Edad" id="number" class="entry" required><br>
-
-            <label for="dropdown">Especialización</label><br>
-            <select name="dropdown" id="dropdown" class="entry">
-                <option disabled selected value>Selecciona la Especialización deseada</option>
-                <option value="option1">Lenguajes de Programación</option>
-                <option value="option2">Programación web</option>
-                <option value="option3">Sistemas operativos</option>
-                <option value="option4">Arquitectura de computadoras</option>
-                <option value="option5">Bases de datos</option>
-            </select><br>
-
-            <div class="group">
-                <p>Turno</p>
-                <label for="radio1" class="option-label">
-                    <input id="radio1" type="radio" name="radio" value="Radio2">Mañana
-                </label><br>
-                <label for="radio2" class="option-label">
-                    <input id="radio2" type="radio" name="radio" value="Radio3">Tarde
-                </label><br>
-                <label for="radio3" class="option-label">
-                    <input id="radio3" type="radio" name="radio" value="Radio1">Noche
-                </label><br>
-            </div>
-
-            <div class="group">
-                <p>Tipo de asistencia</p>
-                <label for="checkbox1" class="option-label">
-                    <input type="checkbox" id="checkbox1" name="checkbox" value="Check1">Presencial
-                </label><br>
-                <label for="checkbox2" class="option-label">
-                    <input type="checkbox" id="checkbox2" name="checkbox" value="Check2">Virtual
-                </label><br>
-                <label for="checkbox3" class="option-label">
-                    <input type="checkbox" id="checkbox3" name="checkbox" value="Check3">Con Tutor
-                </label><br>
-            </div>
-
-            <label for="textarea">Comentarios</label><br>
-            <textarea id="textarea" name="txtarea"
-                placeholder="Escribe aquí cualquier consulta que desees realizarnos, y la responderemos a la brevedad a tu correo electrónico."></textarea><br><br>
-
-            <button type="submit" id="submit">ENVIAR</button>
-        </form>
-        <br>
-    </div>
-
+  <h1>Sistema circulatori</h1>
+  <form>
+    <ul class="items"></ul>
+    <fieldset class="username enable">
+      <div class="icon left"><i class="user"></i></div>
+      <input type="text" name="username" placeholder="Nom" />
+      <div class="icon right button"><i class="arrow"></i></div>
+    </fieldset>
+    <fieldset class="email">
+      <div class="icon left"><i class="letter"></i></div>
+      <input type="mail" name="email" placeholder="Correu" />
+      <div class="icon right button"><i class="arrow"></i></div>
+    </fieldset>
+    <fieldset class="password">
+      <div class="icon left"><i class="lock"></i></div>
+      <input type="password" name="password" placeholder="Contrasenya" />
+      <div class="icon right button"><i class="arrow"></i></div>
+    </fieldset>
+    <fieldset class="thanks">
+      <div class="icon left"><i class="heart"></i></div>
+      <p>Gracies per el teu temps</p>
+      <div class="icon right"><i class="heart"></i></div>
+    </fieldset>
+  </form>
+  <script src="js/formulario.js"></script>
 
 </body>
 
